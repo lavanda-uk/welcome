@@ -89,8 +89,11 @@ We follow a `Feature Branch Workflow` approach. All our developments are made in
 As a result:
 
 - code only gets merged into `main` through a pull request (PR)
+- the PR description should mention the authors, when it's been pair programmed/mobbed
 - a PR should only be merged into `main` when it's production ready
 - a PR needs to be up to date with `main` in order to be merged - to do so we `rebase` (`git rebase main`)
+- a PR should be incorporated through a merge commit
+- the PR should always be merged by the one of the author(s) (unless the author(s) instructed someone else to do so)
 - if the feature requires stakeholder involvement/user testing, the branch should be made available in a dedicated testing environment (staging, branch deploy or heroku review app)
 
 Here is an illustration of the process:
